@@ -5,17 +5,44 @@ export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: "Kanit", sans-serif;
     height: 100vh;
     background-color: ${({ theme }) => theme.colors.background};
+
+    
+  }
+
+  *::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: .4rem;
+  }
+
+  *::-webkit-scrollbar:horizontal {
+    -webkit-appearance: none;
+    height: .4rem;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.colors.primary};
+    border-radius: 10px;
+  }
+
+  *::-webkit-scrollbar-track-piece {
+    background-color: ${({ theme }) => theme.colors.primary_20t};
+    border-radius: 12px;
+  }
+
+  #root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-
   align-items: center;
 `;
 

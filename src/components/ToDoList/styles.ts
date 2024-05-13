@@ -6,6 +6,9 @@ export const Box = styled.div`
   gap: 1rem;
   align-items: center;
   margin-top: 2rem;
+  height: 72vh;
+  width: 50vw;
+  overflow-y: auto;
 `;
 
 export const Text = styled.span`

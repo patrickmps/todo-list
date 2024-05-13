@@ -11,6 +11,7 @@ declare module 'styled-components' {
       button: string;
       hover_btn: string;
       border: string;
+      primary_20t?: string;
     };
   }
 }

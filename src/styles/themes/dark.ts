@@ -9,6 +9,7 @@ export default <DefaultTheme>{
     text_secondary: '#252525',
     button: '#F7F7F7',
     hover_btn: '#534CC2',
-    border: '#F7F7F7'
+    border: '#F7F7F7',
+    primary_20t: '#6c63ff32',
   }
 };
