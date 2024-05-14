@@ -9,6 +9,7 @@ import { TopBar } from './components/TopBar';
 import { ToDoList } from './components/ToDoList';
 import { ModalNote } from './components/ModalNote';
 import todoStore from './stores/todoStore';
+import { Footer } from './components/Footer';
 
 const themes = {
   dark: dark,
@@ -46,6 +47,8 @@ function App() {
         <TopBar search={search} setSearch={setSearch} filter={filter} setFilter={setFilter} />
       </Container>
       <ToDoList todoList={showTodos} />
+      <Footer />
+
       <AddButton onClick={() => setIsOpenNewNote(!isOpenNewNote)}>+</AddButton>
 
       <ModalNote isOpen={isOpenNewNote} setOpenModal={setIsOpenNewNote} />
