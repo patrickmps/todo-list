@@ -9,6 +9,13 @@ export const Box = styled.div`
   height: 72vh;
   width: 50vw;
   overflow-y: auto;
+
+  @media (max-width: 1270px) {
+    width: 75vw;
+  }
+  @media (max-width: 850px) {
+    width: 100vw;
+  }
 `;
 
 export const Text = styled.span`

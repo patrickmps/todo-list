@@ -54,7 +54,7 @@ export const ToDo = observer(({ todo }: Props) => {
 
   return (
     <>
-      <Row>
+      <Row style={{ display: !showUndo ? 'flex' : 'none' }}>
         <CheckBox checked={checked} onClick={handleChecked}>
           <CheckIcon />
         </CheckBox>
