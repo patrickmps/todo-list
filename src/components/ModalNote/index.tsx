@@ -15,22 +15,19 @@ type Props = {
 export const ModalNote = observer(({ isOpen, setOpenModal, todo }: Props) => {
   const [note, setNote] = useState('');
   const { create, update } = useContext(todoStore);
-  
 
   function handleNote() {
     try {
       if (todo) {
         update(todo.id, { ...todo, note: note });
-
       } else {
         create({ note: note, done: false });
       }
       setOpenModal(!isOpen);
       setNote('');
-    } catch (error : unknown) {
-      if (axios.isAxiosError(error))  {
+    } catch (error: unknown) {
+      if (axios.isAxiosError(error)) {
         console.error(error.message);
-        
       } else if (error instanceof Error) {
         console.error(error.message);
       } else {
@@ -40,8 +37,8 @@ export const ModalNote = observer(({ isOpen, setOpenModal, todo }: Props) => {
   }
 
   useEffect(() => {
-    if(todo) setNote(todo.note);
-  }, [])
+    if (todo) setNote(todo.note);
+  }, []);
 
   return (
     <Modal isOpen={isOpen}>

@@ -20,10 +20,12 @@ export const TopBar = ({ search, setSearch, filter, setFilter }: Props) => {
   return (
     <Box>
       <Search value={search} setValue={setSearch} />
-      <SelectInput value={filter} setValue={setFilter} />
-      <BtnTheme onClick={toggleTheme}>
-        <PiMoonBold color={theme.colors.button} size={22} />
-      </BtnTheme>
+      <span>
+        <SelectInput value={filter} setValue={setFilter} />
+        <BtnTheme onClick={toggleTheme}>
+          <PiMoonBold color={theme.colors.button} size={22} />
+        </BtnTheme>
+      </span>
     </Box>
   );
 };

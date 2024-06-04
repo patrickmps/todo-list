@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Select = styled.select`
-  width: max-content;
+  width: 100%;
   padding: 0 10px;
   background-color: ${({ theme }) => theme.colors.primary};
   border: none;
@@ -12,6 +12,10 @@ export const Select = styled.select`
   border-right: 8px solid transparent;
   &:focus {
     outline: none;
+  }
+
+  @media (min-width: 540px) {
+    width: max-content;
   }
 `;
 

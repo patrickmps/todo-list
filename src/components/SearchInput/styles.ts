@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Input = styled.input`
-  width: 30rem;
+  width: 100%;
   background-color: transparent;
   border: none;
   height: 38px;
@@ -14,8 +14,10 @@ export const Input = styled.input`
 
 export const Box = styled.div`
   display: flex;
+  width: 100%;
   align-items: center;
   padding: 0 10px;
   border: 2px solid ${({ theme }) => theme.colors.border};
   border-radius: 5px;
+  box-sizing: border-box;
 `;

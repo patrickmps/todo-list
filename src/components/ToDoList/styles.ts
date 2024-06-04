@@ -7,14 +7,11 @@ export const Box = styled.div`
   align-items: center;
   margin-top: 2rem;
   height: 72vh;
-  width: 50vw;
+  width: 80vw;
   overflow-y: auto;
 
-  @media (max-width: 1270px) {
-    width: 75vw;
-  }
-  @media (max-width: 850px) {
-    width: 100vw;
+  @media (min-width: 1080px) {
+    width: 50vw;
   }
 `;
 

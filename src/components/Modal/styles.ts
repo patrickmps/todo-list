@@ -11,6 +11,7 @@ export const Container = styled.div`
 `;
 
 export const Box = styled.div`
+  width: 70%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -18,5 +19,9 @@ export const Box = styled.div`
   background-color: ${({ theme }) => theme.colors.background};
   border: 1px solid ${({ theme }) => theme.colors.border};
   transform: translate(-50%, -50%);
-  padding: 2rem 4rem;
+  padding: 2rem 3rem;
+
+  @media (min-width: 720px) {
+    width: 35rem;
+  }
 `;

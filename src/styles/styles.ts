@@ -64,8 +64,8 @@ export const AddButton = styled.button`
   cursor: pointer;
   bottom: 0;
   right: 0;
-  left: 75%;
-  top: 80%;
+  left: 80%;
+  top: 90%;
   transition: all 0.3s;
   &:hover {
     background-color: ${({ theme }) => theme.colors.hover_btn};

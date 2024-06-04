@@ -2,8 +2,30 @@ import styled from 'styled-components';
 
 export const Box = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 1rem;
+  width: 80vw;
+  justify-content: center;
+
+  > span {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  @media (min-width: 540px) {
+    flex-direction: row;
+
+    > span {
+      width: max-content;
+    }
+  }
+
+  @media (min-width: 1080px) {
+    width: 40vw;
+  }
 `;
 
 export const BtnTheme = styled.button`
